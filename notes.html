@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Week Page 1 - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Assignment portal in WDD 230: 
+Web Frontend Development at Brigham Young University - Idaho">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="medium.css">
+    
+</head>
+
+<body>
+    <header>
+   
+    <h1>Week 1</h1>
+    <h3>Notes - Local Storage</h3>
+    </header>
+    <main>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="story_editor.html">Coding Activity</a>
+        </ul>
+
+        <p> In order to highlight what is most important about local storage I will answer the following questions          </p>
+            <h4>1. How can I store data so it isn’t lost when the application stops?</h4>
+            <p>
+                When applications stop, they do not store information and it is lost.  Applications must be created to store information, 
+            </p>
+            <h4>2. How do I get data back into my application once it has been stored?</h4>
+            <p>
+                The information stored or shared with the user is called output. Anything coming in from where it was stored or anything
+                the user enters is called input. Using JavaScript I can store any information
+                I want to use later.
+            </p>
+
+            <h4>3. What can I do to allow the user to communicate?</h4>
+            <p>An application allows people to write, save, edit or show how to store written information.</p>
+
+            <p>Communication is vital for us, one of the most important verbs is to remember. To remember it is necessary to create applications to store the information.</p>
+            
+            <p>    function loadStory(){
+                var storyName = document.getElementById("name_input").value
+                var storyHTML = localStorage.getItem("storyName")
+                document.getElementById("story_editor").value = storyHTML
+                }
+                function saveStory(){
+                var storyName = document.getElementById("name_input").value
+                var storyHTML = document.getElementById("story_editor").value
+                localStorage.setItem(storyName, storyHTML)
+                }
+                function displayStory(){
+                var storyHTML = document.getElementById("story_editor").value
+                document.getElementById("story_display").innerHTML = storyHTML
+                }
+            </p>
+            
+        
+    </main>
+    <footer>   
+        <div class ="bar-footer">
+        <p>&copy; 2021 | Portfolio | WDD330 - 06 | Jesus Tortolero | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning </a></p>
+        <span id="currentDate"></span> 
+        <script src="script.js"></script>
+        </div>
+        </footer>
+        
+       
+    </body>
+    </html>
