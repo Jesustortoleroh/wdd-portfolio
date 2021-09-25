@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Week 2 - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Assignment portal in WDD 230: 
+Web Frontend Development at Brigham Young University - Idaho">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="medium.css">
+    
+</head>
+
+<body>
+    <header>
+   
+    <h1>Week 2</h1>
+    <h3>Notes - Readings </h3>
+    </header>
+    <main>
+        
+            <h2>Notes</h2>
+            <h4> Ch2: Programming basics: Variables, scope, converting/parsing, and template literals.</h4>
+            <p>Const is used when the variable will not be reassigned to another value. </p>
+            <p>Let is used when the variable will be reassigned later in the program.</p>
+            <p>Let should be used instead of var because let has block scope. Var can be used in old code</p>
+            <P>I can use camelCased or underscore_separated variable names</P>
+            <p> In the following code, changing d.value also changes c.value because d and c reference the same object: </p>
+                    <br>
+                    <div style="background: lightgray; padding: 10px;">
+                    const c = { value: 1 };<br>
+                    let d = c; // c.value = 1, d.value = 1<br>
+                    d.value = 2; // c.value = 2, d.value = 2<br>
+                    </div>
+                
+                <li>String functions
+                    <ul>
+                        <li>.toUpperCase() : string</li>
+                        <li>.toLowerCase() : string</li>
+                        <li>.charAt(index) : char</li>
+                        <li>.indexOf(character) : number</li>
+                        <li>.lastIndexOf(character) : number</li>
+                        <li>.startsWith(character) : bool</li>
+                        <li>.endsWith(character) : bool</li>
+                        <li>.concat('string', 'anotherString') : string</li>
+                    </ul>
+                </li>
+         
+                <h4> Arrays, Logic, and Loops: array methods.</h4>
+         <p>Non-primitive data types, such as arrays, functions and objects all have a type of "Object".</p>
+
+
+         <li>Arrays Properties
+             <ul>
+                 <li> Length: is used as part of the index to find the last item in an array. </li>
+                 <li>Pop: Is used to remove the last item in an array. </li>
+                 <li>Push: appends a new value to the end of the array.</li>
+                 <li>Shift: remove the first item in array.</li>
+                 <li>UnShift: appends a new item to the beginning  of the array.</li>
+
+             </ul>
+
+         </li>
+          <li> Arrays Methods
+             <ul>
+                 <li>concat() : can be used to merge an array with one or more arrays.</li>
+                 <li>join() : can be used to turn the array into a string that comprises all items in the array(separated by commas).</li>
+                 <li>slice(): creates a subarray.</li>
+                 <li>splice(): removes items from an array then inserts new items.</li>
+                 <li>reverse(): reverse the order of an array.</li>
+                 <li>sort(): sort the order of an array.</li>
+                 <li>indexOf(): find out if an array contains a particular value</li>
+                 <li>includes(): returns a boolean value depending on whether the arrays contains a particular element or not.</li>
+             </ul>
+          </li>
+    
+    </main>
+    <footer>   
+        <div class ="bar-footer">
+        <p>&copy; 2021 | Portfolio | WDD330 - 06 | Jesus Tortolero | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning </a></p>
+        <span id="currentDate"></span> 
+        <script src="script.js"></script>
+        </div>
+        </footer>
+        
+       
+    </body>
+    </html
