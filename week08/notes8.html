@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Week 8 - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Assignment portal in WDD 330: 
+Web Frontend Development at Brigham Young University - Idaho">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
+</head>
+
+<body>
+    <header>
+   
+    <h1>Week 8</h1>
+    <h3>Notes - Readings </h3>
+    </header>
+    <main>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href=" https://jesustortoleroh.github.io/wdd-portfolio/week08/TeamActivity/index.html"> Working with a remote API - Team Activity</a></li>    
+        </ul>
+
+       <h4>Transforms and Transitions</h4>
+       <P>The <strong>CSS3 transform property</strong>  applies a 2D or 3D transformation to an element. This property allows you translate, rotate, scale, and/or skew any element on the page.</P>
+       <p>transform: none|transform-functions|initial|inherit;</p>
+       <h4>Property Values</h4>
+       <ul>
+        <li><strong>Traslation:</strong>  allow you to move elements left, right, up, or down. <em>transform: translate(45px, -45px);</em> </li>
+        <li><strong>Scaling:</strong> scales an element by the defined factors horizontally then vertically.  <em>transform: scale(1.5, 0.25);</em></li>
+        <li><strong>Rotation:</strong> rotates an element around the point of origin by a specified angle value. <em>transform: rotate(10deg) translateX(40px) scale(1.5);</em></li>
+        <li><strong>Skew:</strong> specifies a skew along the x and y axes. <em>transform: skew(15deg, 4deg);</em></li>
+        <li><strong>Origin:</strong> defaults to the center of the object.<em> transform-origin: 0 0;</em></li>
+        <li><Strong>Other Property Values:</Strong>  none, matrix[2D], matrix3d[3D], perspective, initial, inherit.</li>
+      </ul>
+      <p><strong>Transitions</strong> allow the values of CSS properties to change over time, essentially providing simple animations.</p>
+      <h4>Transitions properties</h4>
+       <ul>
+           <li><em>transition-property</em>  defines the CSS properties of the element that
+            should be transitioned, with all for all properties being the default.</li>
+           <li><em>transition-duration</em> sets how long the transition will take: the
+            duration of time it takes to go from the default state to the transitioned state.</li>
+           <li><em>transition-timing-function</em> lets you control the pace of the transition in
+            even more granular detail.</li>
+           <li><em>transition-delay property</em> introduce a delay before the transition begins.</li>
+       </ul>
+       <h4>Canvas, SVG, and Drag and Drop</h4>
+       <p> <strong>SVG</strong>  is scalable vector graphics.  This is defining the image by a language, so as it changes size (scales), it does it smoothly.  It is an element  in the DOM therefore all the things you can do to other DOM elements, you can do to an svg element. CSS can manipulate an svg element also.</p>
+        <p><strong>Canvas</strong> is a container that will live in the DOM.  However, its contents are not part of the DOM, so you cannot manipulate the contents with CSS. 
+             The HTML 5 Canvas element is good for Raster (pixel) based items.  
+             Several  JavaScript APIs are implemented in the browsers for the canvas element.  The Canvas API and the WebGl API are the 2 used the most for different reasons.  Canvas API manipulated graphic images well.  WebGL API is good for 2d and 3d Graphic applications (Modeling and Games).  WebGL implements the OpenGL 1 and 2 standards for 3d rendering.  
+            The canvas can handle thousands of objects, where as SVG has a hard time handling that many objects</p>
+            <p><strong>Drag and Drop API :</strong>  allows us to specify that certain elements are draggable, and then specify what should happen when these draggable elements are dragged over or dropped onto other elements on the page. </p>
+    <footer>   
+        <div class ="bar-footer">
+        <p>&copy; 2021 | Portfolio | WDD330 - 06 | Jesus Tortolero | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning </a></p>
+        <span id="currentDate"></span> 
+        <script src="js/script.js"></script>
+        </div>
+        </footer>
+        
+       
+    </body>
+    </html
