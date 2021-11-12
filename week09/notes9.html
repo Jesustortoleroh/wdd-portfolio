@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>Week 9 - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Assignment portal in WDD 330: 
+Web Frontend Development at Brigham Young University - Idaho">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
+</head>
+
+<body>
+    <header>
+   
+    <h1>Week 9</h1>
+    <h3>Notes - Readings </h3>
+    </header>
+    <main>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href=" https://jesustortoleroh.github.io/wdd-portfolio/week09/TeamActivity/index.html"> Team Activity: DrumKit</a></li>    
+        </ul>
+    <h4>The Window Object</h4>
+    <p>The Window Object is the browser window that contains a web page.</p>
+    <p> The Browser Object Model [BOM] is a collection of properties and methods that contain information about browser and computer screen.</p>
+    <p>Global Variables are properties of the window object in a browser.</p> 
+    <h4>Window object methods:</h4> 
+    <ul>
+     <li>The <em>window.alert()</em> method will pause the execution of the program and display a message in a dialog box. </li>
+     <li>The <em>window.confirm()</em> method will stop the execution of the program and display a confirmation dialog that shows the message provided as an argument, and giving the options  of OK or Cancel.</li> 
+     <li>The <em>window.prompt()</em> method will stop the execution of the program, and then shows a message and an imput field that allows the user to enter text.</li>    
+    </ul> 
+    <h4>Window object properties:</h4>
+    <ul>
+    <li>The <em>window.navigator</em> object gives information about the user´s browser and operating system. This can be unreliable.</li>
+    <li>The <em>window.location</em> object provides information about the URL of the current page.</li>
+     <ul><strong> Location Properties:</strong> 
+         <li> <em>href</em> returns the full URL as a string.</li>
+         <li> <em>protocol</em> returns  a string describing the protocol used. (http, https, pop2, ftp).</li>
+         <li> <em>host</em> returns  a string describing the domain of the current URL and the port number.</li>
+         <li> <em>hostname</em> returns  a string describing the domain of the current URL.</li>
+         <li> <em>port</em> returns  a string describing the port number.</li>
+         <li> <em>pathname</em> returns  a string of the path that follows the domain.</li>
+         <li> <em>search</em> returns  a string that starts  with a "?"  followed by the query string parameters.</li>
+         <li> <em>hash</em> returns  a string that starts  with a "#"  followed by the fragment identifier.</li>
+         <li> <em>origin</em> returns  a string that shows the protocol and domain where the current page originated from. </li>
+     </ul>
+     <ul> <strong>Location Methods:</strong> 
+         <li><em>reload()</em> can be used to force a reload of the current page.</li>
+         <li><em>assign()</em> can be used to load another resource from a URL provided as a parameters.</li>
+         <li> <em>replace()</em> is the same as  assign() method, but the current page will not be  stored  in the session history. </li>
+         <li> <em>toString()</em> returns a string containing the whole URL.</li>
+     </ul>
+    <li>The <em>window.history</em> object keeps information about the pages that have been visited in the session.</li>
+    <li>The <em>window.screen</em> object contains information about the screen  the browser.</li>
+    </ul>
+    <h4>HTML5 APIs.</h4>
+    <p><em>data-</em> attributes help to embed custom data into a web page that is used to enhace the user with JavaScript.</p>
+    <p>Examples:</p>
+    <p><em>data-powers = "flight superSpeed" </em></p>
+    <p><em>data-rating = "5"</em></p>
+    <p>The WEB STORAGE API allows key-value pairs to be stored on the user´s device in a similar ways to cookies, but without the same storage restrictions.</p>
+    <p>The Geolocation API allows you access the geographic coordinates of the user´s device. The user gives permission.</p>
+    <p>The WEB Worker API can be used to perform tasks in background. It helps to avoid unresponsive websites.</p>
+      
+    <footer>   
+        <div class ="bar-footer">
+        <p>&copy; 2021 | Portfolio | WDD330 - 06 | Jesus Tortolero | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning </a></p>
+        <span id="currentDate"></span> 
+        <script src="js/script.js"></script>
+        </div>
+        </footer>
+        
+       
+    </body>
+    </html
