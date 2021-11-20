@@ -27,3 +27,9 @@ form {
 #radiusSection {
     padding: 10px;
 }
+
+footer {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
