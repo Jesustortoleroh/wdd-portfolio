@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Local Quakes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      .quakeStyles {
-        list-style-type: none;
-        padding-left: 0;
-      }
-      .quakeStyles li {
-        margin: 0.5em 0;
-      }
-      .quakeStyles div {
-        font-size: 0.8em;
-      }
-    </style>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <heading>
-          <nav><ul id="mainNav"></ul></nav>
-        </heading>
-      </nav>
-    </header>
-    <main id="content">
-      <h1>Quake List</h1>
-      <ul id="quakeList" class="quakeStyles"></ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10</title>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="Quake.css">
+</head>
+
+<body>
+    <nav id="nav"></nav>
+
+    <main>
+        <form>
+            <div id="radiusSection">
+                Radius: <input type="number" id="radiusInput" placeholder="ex: 100"> km
+            </div>
+            <button id="radiusButton">Enter Radius</button>
+        </form>
+        <h2>Quake List</h2>
+        <div id="quakeList"></div>
     </main>
 
-    <script src="js/index.js" type="module"></script>
-  </body>
+    <footer>
+        &copy; 2021 | WDD 330 Portfolio | Jesus Tortolero
+    </footer>
+
+    <script type="module" src="./index.html"></script>
+
+</body>
+
 </html>

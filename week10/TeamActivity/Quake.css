@@ -1,0 +1,29 @@
+main {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.quakeTitle {
+    font-size: large;
+    font-weight: bold;
+}
+
+.earthquake {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px dashed rgb(65, 199, 240);
+}
+
+form {
+    padding: 10px;
+}
+
+#radiusInput {
+    width: 50px;
+    border: 1px solid rgb(65, 199, 240);
+}
+
+#radiusSection {
+    padding: 10px;
+}
