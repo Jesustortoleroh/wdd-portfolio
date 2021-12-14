@@ -1,0 +1,217 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: white;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+  color: #ff4316;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+  
+}
+.logo img {
+	width: 80px;
+	height: auto;
+  
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+}
+
+.m {
+	letter-spacing: 1pt;
+	color: black;
+	font-weight: 700;
+	font-size: 0.8rem;
+}
+
+.social svg {
+	width: 25px;
+	height: auto;
+}
+
+main {
+	background-color: white;
+	padding: 5px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+  color: black;
+}
+
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #ff4316;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #fdfdfd;
+	font-weight: 700;
+	transition: 0.5s;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #31394d;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+/* Larger viewports */
+@media only screen and (min-width: 32.5em) {
+	header img {
+		width: 100%;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+		margin: 0;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: 0.9rem;
+	}
+}
+
+/* (A) ENTIRE PAGE */
+#cart-wrap {
+  font-family: arial, sans-serif;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+#cart-products, #cart-items {
+  box-sizing: border-box;
+  padding: 10px;
+}
+#cart-products { width: 70%; }
+#cart-items { width: 30%; }
+input.cart, button.cart {
+  padding: 10px;
+  border: 0;
+  background: #ff4316;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* (B) PRODUCTS LIST */
+#cart-products {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+.p-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.p-img { max-width: 150px; }
+.p-name, .p-price { font-weight: 700; }
+.p-name, .p-desc, .p-price { margin: 5px 0; }
+.p-name { text-transform: uppercase; }
+.p-desc {
+  color: #aaa;
+  font-size: 0.9em;
+}
+.p-price { font-size: 1.35em; }
+input.p-add { width: 70%; }
+
+/* (C) CURRENT SHOPPING CART */
+#cart-items {
+  background: #31394d;
+  color: #fff;
+  border-radius: 5px;
+}
+.c-item {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-item > * { box-sizing: border-box; }
+.c-name, .c-total, input.c-empty, input.c-checkout { width: 100%; }
+.c-total, input.c-empty, input.c-checkout { margin-top: 10px; }
+.c-del { width: 25%; }
+.c-qty { width: 75%; }
+.c-total {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* (D) RESPONSIVE */
+@media screen AND (max-width: 768px) {
+  #cart-wrap { grid-template-columns: 60% 40%; }
+  #cart-products { grid-template-columns: auto; }
+}
+
+footer {
+    background-color: #ff4316;
+    padding: 5px;
+    margin-top:2em;
+    border-bottom:10px;
+    color:white;
+    text-align:center;
+}
+
+footer a {
+    color:white;
+}
+#outputdata {
+    padding-top:0px;
+    margin-top:-15px;
+    font-size:15px;
+    color: #E63946;
+}
